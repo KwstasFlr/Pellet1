@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Κωστακόπουλος Βασίλειος | Πέλλετ - Καυσόξυλα</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3eee8;
+    color: #302820;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1160px, calc(100% - 40px));
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-inner {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.logo {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.logo span {
+    color: #d28a5d;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: rgba(255,255,255,.75);
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.header-phone {
+    background: #b96b3d;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #30261f, #49372c);
+    color: white;
+}
+
+.hero-content {
+    max-width: 780px;
+    padding-top: 70px;
+}
+
+.small-title {
+    color: #d58a5b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin-top: 16px;
+    font-family: Georgia, serif;
+    font-size: clamp(36px , 6vw, 70px);
+    line-height: 1.05;
+}
+
+.hero h1 span {
+    color: #d58a5b;
+}
+
+.hero-text {
+    max-width: 680px;
+    margin-top: 24px;
+    color: rgba(255,255,255,.7);
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #b96b3d;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #9d542f;
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,.35);
+    color: white;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.top-info {
+    padding: 55px 0;
+    background: #e7ded4;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border: 1px solid #d7ccc1;
+}
+
+.info-card {
+    padding: 30px 35px;
+}
+
+.info-card + .info-card {
+    border-left: 1px solid #d7ccc1;
+}
+
+.info-label,
+.section-label,
+.product-type,
+.professional-label {
+    color: #b96b3d;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.info-card h3 {
+    margin-top: 7px;
+    font-family: Georgia, serif;
+    font-size: 26px;
+}
+
+.info-card p {
+    margin-top: 9px;
+    color: #756b62;
+    font-size: 13px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    padding: 90px 0;
+    background: #30261f;
+    color: white;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.intro-label {
+    color: #d58a5b;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.intro h2 {
+    margin-top: 10px;
+    font-family: Georgia, serif;
+    font-size: clamp(37px, 4vw, 52px);
+    line-height: 1.1;
+}
+
+.intro p {
+    margin-top: 20px;
+    color: rgba(255,255,255,.68);
+    font-size: 15px;
+}
+
+.offer-box {
+    padding: 40px;
+    background: #45352b;
+    border: 1px solid rgba(255,255,255,.1);
+    border-left: 4px solid #b96b3d;
+}
+
+.offer-box h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.offer-box p {
+    margin-top: 12px;
+    color: rgba(255,255,255,.68);
+}
+
+.offer-box strong {
+    display: block;
+    margin-top: 20px;
+    color: #d58a5b;
+    font-size: 12px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+    padding: 90px 0;
+    background: #f3eee8;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    margin-top: 9px;
+    font-family: Georgia, serif;
+    font-size: clamp(37px, 4vw, 52px);
+    line-height: 1.1;
+}
+
+.section-heading p {
+    margin-top: 12px;
+    color: #756b62;
+    font-size: 14px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
+/* ΜΑΥΡΑ ΚΟΥΤΑΚΙΑ ΠΡΟΪΟΝΤΩΝ */
+
+.product-card {
+    min-height: 220px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    background: #30261f;
+    color: white;
+    border: 1px solid #30261f;
+    transition: .25s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    border-color: #b96b3d;
+    box-shadow: 0 12px 30px rgba(48,40,32,.15);
+}
+
+.product-card h3 {
+    margin-top: 7px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.product-card p {
+    margin-top: 10px;
+    color: rgba(255,255,255,.68);
+    font-size: 13px;
+}
+
+.product-price {
+    margin-top: 13px;
+    color: #d58a5b;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PROFESSIONALS
+========================= */
+
+.professionals {
+    padding: 90px 0;
+    background: #30261f;
+    color: white;
+}
+
+.professional-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.professional-grid h2 {
+    margin-top: 9px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(35px, 4vw, 50px);
+    line-height: 1.1;
+}
+
+.professional-grid > div:first-child p {
+    max-width: 610px;
+    margin-top: 18px;
+    color: rgba(255,255,255,.68);
+    font-size: 14px;
+}
+
+.professional-side {
+    padding: 32px;
+    background: #45352b;
+    border: 1px solid rgba(255,255,255,.1);
+    border-left: 4px solid #b96b3d;
+}
+
+.professional-side h3 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.professional-side p {
+    margin-top: 9px;
+    color: rgba(255,255,255,.68);
+    font-size: 13px;
+}
+
+.professional-side .btn {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 95px 0;
+    background: #dfe5df;
+}
+
+.contact .section-heading h2 {
+    color: #29332e;
+}
+
+.contact .section-heading p {
+    color: #5e6862;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    gap: 18px;
+}
+
+.contact-info,
+.contact-form {
+    padding: 40px;
+    background: #f9faf8;
+    border: 1px solid #c9d1ca;
+    box-shadow: 0 10px 30px rgba(35,45,39,.06);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #29332e;
+    font-family: Georgia, serif;
+    font-size: 31px;
+    line-height: 1.15;
+}
+
+.contact-item {
+    margin-top: 23px;
+    color: #5e6862;
+    font-size: 14px;
+}
+
+.contact-item small {
+    display: block;
+    margin-bottom: 4px;
+    color: #b96b3d;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.contact-item a {
+    color: #29332e;
+    font-weight: bold;
+}
+
+.contact-info .btn {
+    margin-top: 25px;
+}
+
+
+/* GOOGLE MAPS */
+
+.maps-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    min-height: 44px;
+    padding: 0 18px;
+    background: #b96b3d;
+    color: white !important;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.maps-button:hover {
+    background: #9d542f;
+}
+
+form {
+    margin-top: 22px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 14px 15px;
+    background: white;
+    border: 1px solid #cbd2cd;
+    border-radius: 3px;
+    color: #29332e;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #b96b3d;
+}
+
+textarea {
+    min-height: 135px;
+    resize: vertical;
+}
+
+.submit {
+    width: 100%;
+    min-height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #b96b3d;
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #9d542f;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 0;
+    background: #30261f;
+    color: rgba(255,255,255,.55);
+    text-align: center;
+    font-size: 11px;
+}
+
+footer strong {
+    color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .info-grid,
+    .intro-grid,
+    .professional-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card + .info-card {
+        border-left: none;
+        border-top: 1px solid #d7ccc1;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: calc(100% - 30px);
+    }
+
+    .logo {
+        font-size: 11px;
+    }
+
+    .header-phone {
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 610px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .top-info,
+    .intro,
+    .products,
+    .professionals,
+    .contact {
+        padding: 70px 0;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 27px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container header-inner">
+
+<a href="#" class="logo">
+    ΚΩΣΤΑΚΟΠΟΥΛΟΣ <span>ΒΑΣΙΛΕΙΟΣ</span>
+</a>
+
+<nav>
+    <a href="#proionta">Προϊόντα</a>
+    <a href="#epaggelmaties">Επαγγελματίες</a>
+    <a href="#epikoinonia">Επικοινωνία</a>
+</nav>
+
+<a href="tel:6955488220" class="header-phone">
+    695 548 8220
+</a>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="small-title">
+    Καύσιμα & Θέρμανση
+</div>
+
+<h1>
+    ΟΛΑ ΟΣΑ ΧΡΕΙΑΖΕΣΤΕ
+    <span>ΓΙΑ ΤΗΝ ΘΕΡΜΑΝΣΗ ΣΑΣ.</span>
+</h1>
+
+<p class="hero-text">
+    Πέλλετ, καυσόξυλα, μπρικέτες, κάρβουνα,
+    σόμπες και είδη θέρμανσης για κατοικίες
+    και επαγγελματικούς χώρους.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#proionta" class="btn btn-primary">
+    Δείτε τα προϊόντα
+</a>
+
+<a href="#epikoinonia" class="btn btn-outline">
+    Ζητήστε προσφορά
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INFO -->
+
+<section class="top-info">
+
+<div class="container">
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<div class="info-label">
+    Παράδοση
+</div>
+
+<h3>
+    Παράδοση στον χώρο σας
+</h3>
+
+<p>
+    Δυνατότητα μεταφοράς των προϊόντων
+    στον χώρο σας, κατόπιν συνεννόησης.
+    Η υπηρεσία μεταφοράς χρεώνεται ξεχωριστά.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-label">
+    Επαγγελματίες
+</div>
+
+<h3>
+    Μεγαλύτερες ποσότητες
+</h3>
+
+<p>
+    Για μεγαλύτερες ποσότητες και
+    επαγγελματικές προμήθειες,
+    επικοινωνήστε μαζί μας για
+    διαθεσιμότητα και τιμή.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="container intro-grid">
+
+<div>
+
+<div class="intro-label">
+    Κωστακόπουλος Βασίλειος
+</div>
+
+<h2>
+    Προϊόντα θέρμανσης
+    για κάθε ανάγκη.
+</h2>
+
+<p>
+    Επιλεγμένα καύσιμα και προϊόντα
+    θέρμανσης για κατοικίες,
+    επαγγελματικούς χώρους και επιχειρήσεις.
+</p>
+
+<p>
+    Για μεγαλύτερες ποσότητες,
+    η τιμή διαμορφώνεται κατόπιν επικοινωνίας.
+</p>
+
+</div>
+
+
+<div class="offer-box">
+
+<h3>
+    Ζητήστε προσφορά
+</h3>
+
+<p>
+    Αναφέρετε το προϊόν και την ποσότητα
+    που χρειάζεστε και επικοινωνήστε μαζί μας
+    για διαθεσιμότητα και τιμή.
+</p>
+
+<strong>
+    Τιμές κατόπιν επικοινωνίας
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products" id="proionta">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="section-label">
+    Προϊόντα
+</div>
+
+<h2>
+    Καύσιμα & είδη θέρμανσης
+</h2>
+
+<p>
+    Προϊόντα για οικιακή και επαγγελματική χρήση.
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Καύσιμο θέρμανσης
+</div>
+
+<h3>
+    Πέλλετ
+</h3>
+
+<p>
+    Πέλλετ για οικιακή και
+    επαγγελματική χρήση.
+</p>
+
+<div class="product-price">
+    Τιμή κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Καύσιμο θέρμανσης
+</div>
+
+<h3>
+    Καυσόξυλα
+</h3>
+
+<p>
+    Καυσόξυλα για τζάκια,
+    ξυλόσομπες και θέρμανση.
+</p>
+
+<div class="product-price">
+    Διαθεσιμότητα κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Καύσιμο
+</div>
+
+<h3>
+    Μπρικέτες
+</h3>
+
+<p>
+    Πρακτική επιλογή καυσίμου
+    για θέρμανση.
+</p>
+
+<div class="product-price">
+    Τιμή κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Καύσιμο
+</div>
+
+<h3>
+    Κάρβουνα
+</h3>
+
+<p>
+    Κάρβουνα για οικιακή
+    και επαγγελματική χρήση.
+</p>
+
+<div class="product-price">
+    Διαθεσιμότητα κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Θέρμανση
+</div>
+
+<h3>
+    Σόμπες Πέλλετ
+</h3>
+
+<p>
+    Ιταλικές σόμπες πέλλετ
+    για αποδοτική και αξιόπιστη θέρμανση.
+</p>
+
+<div class="product-price">
+    Eva Calor · Giada / Elsa
+</div>
+
+<div class="product-price">
+    Διαθέσιμα μοντέλα κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Θέρμανση
+</div>
+
+<h3>
+    Σόμπες Ξύλου
+</h3>
+
+<p>
+    Σόμπες ξύλου για αποτελεσματική
+    θέρμανση του χώρου.
+</p>
+
+<div class="product-price">
+    Διαθεσιμότητα κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Θέρμανση
+</div>
+
+<h3>
+    Σόμπες Πετρελαίου
+</h3>
+
+<p>
+    Λύσεις θέρμανσης με πετρέλαιο
+    για διαφορετικές ανάγκες χώρου.
+</p>
+
+<div class="product-price">
+    Διαθεσιμότητα κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Ανταλλακτικά
+</div>
+
+<h3>
+    Ανταλλακτικά
+</h3>
+
+<p>
+    Ανταλλακτικά και εξαρτήματα
+    για σόμπες πέλλετ.
+</p>
+
+<div class="product-price">
+    Ρωτήστε μας για το ανταλλακτικό που χρειάζεστε
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Τροφές κατοικίδιων
+</div>
+
+<h3>
+    Τροφές Σκύλων
+</h3>
+
+<p>
+    Τροφές για σκύλους
+    για καθημερινή διατροφή.
+</p>
+
+<div class="product-price">
+    Nutridog · Barky
+</div>
+
+</div>
+
+</article>
+
+
+<article class="product-card">
+
+<div>
+
+<div class="product-type">
+    Τροφές κατοικίδιων
+</div>
+
+<h3>
+    Τροφές Γατών
+</h3>
+
+<p>
+    Τροφές για γάτες
+    για τις καθημερινές ανάγκες τους.
+</p>
+
+<div class="product-price">
+    Διαθέσιμες κατόπιν επικοινωνίας
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROFESSIONALS -->
+
+<section class="professionals" id="epaggelmaties">
+
+<div class="container">
+
+<div class="professional-grid">
+
+<div>
+
+<div class="professional-label">
+    Επαγγελματίες
+</div>
+
+<h2>
+    Μεγαλύτερες ποσότητες,
+    καλύτερη συνεννόηση.
+</h2>
+
+<p>
+    Για επαγγελματίες και επιχειρήσεις
+    που χρειάζονται μεγαλύτερες ποσότητες
+    προϊόντων θέρμανσης, επικοινωνήστε
+    μαζί μας για να συζητήσουμε τις ανάγκες σας.
+</p>
+
+</div>
+
+
+<div class="professional-side">
+
+<h3>
+    Ζητήστε τιμή
+</h3>
+
+<p>
+    Αναφέρετε το προϊόν και την ποσότητα
+    που σας ενδιαφέρει.
+</p>
+
+<a href="#epikoinonia" class="btn btn-primary">
+    Επικοινωνήστε μαζί μας
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="epikoinonia">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="section-label">
+    Επικοινωνία
+</div>
+
+<h2>
+    Ζητήστε προσφορά
+</h2>
+
+<p>
+    Συμπληρώστε τα στοιχεία σας
+    και γράψτε τι ακριβώς χρειάζεστε.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-info">
+
+<h2>
+    Κωστακόπουλος Βασίλειος
+</h2>
+
+
+<div class="contact-item">
+
+<small>
+    Τηλέφωνο
+</small>
+
+<a href="tel:6955488220">
+    695 548 8220
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<small>
+    Διεύθυνση
+</small>
+
+Κυκλάδων 3
+<br>
+321 31 Λιβαδειά Βοιωτίας
+
+<br>
+
+<a
+    href="https://maps.app.goo.gl/ryx4kab3hyq1PE2V9"
+    target="_blank"
+    class="maps-button"
+>
+    Δείτε την τοποθεσία μας στο Google Maps
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<small>
+    Επικοινωνία
+</small>
+
+Κατόπιν συνεννόησης για
+διαθεσιμότητα, ποσότητες και τιμές.
+
+</div>
+
+
+<a href="tel:6955488220" class="btn btn-primary">
+    Καλέστε μας
+</a>
+
+</div>
+
+
+<div class="contact-form">
+
+<h2>
+    Επικοινωνήστε μαζί μας
+</h2>
+
+
+<form onsubmit="sendForm(event)">
+
+<div class="form-row">
+
+<input
+    type="text"
+    id="name"
+    placeholder="Ονοματεπώνυμο"
+    required
+>
+
+<input
+    type="tel"
+    id="phone"
+    placeholder="Τηλέφωνο"
+    required
+>
+
+</div>
+
+
+<div class="form-row">
+
+<input
+    type="text"
+    id="company"
+    placeholder="Επωνυμία επιχείρησης"
+>
+
+<input
+    type="text"
+    id="area"
+    placeholder="Περιοχή"
+>
+
+</div>
+
+
+<select id="product" required>
+
+<option value="">
+    Τι σας ενδιαφέρει;
+</option>
+
+<option>Πέλλετ</option>
+<option>Καυσόξυλα</option>
+<option>Μπρικέτες</option>
+<option>Κάρβουνα</option>
+<option>Σόμπες Πέλλετ</option>
+<option>Σόμπες Ξύλου</option>
+<option>Σόμπες Πετρελαίου</option>
+<option>Ανταλλακτικά</option>
+<option>Τροφές Σκύλων</option>
+<option>Τροφές Γατών</option>
+<option>Άλλο</option>
+
+</select>
+
+
+<input
+    type="text"
+    id="quantity"
+    placeholder="Ποσότητα"
+>
+
+
+<textarea
+    id="message"
+    placeholder="Γράψτε το μήνυμά σας..."
+></textarea>
+
+
+<button type="submit" class="submit">
+    Αποστολή αιτήματος
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<strong>
+    ΚΩΣΤΑΚΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ
+</strong>
+
+<br>
+
+Πέλλετ · Καυσόξυλα · Μπρικέτες · Κάρβουνα · Θέρμανση
+
+<br>
+
+Κυκλάδων 3, 321 31 Λιβαδειά Βοιωτίας
+
+<br>
+
+695 548 8220
+
+<br><br>
+
+© 2026 Κωστακόπουλος Βασίλειος
+
+</div>
+
+</footer>
+
+
+<script>
+
+function sendForm(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const company = document.getElementById("company").value;
+    const area = document.getElementById("area").value;
+    const product = document.getElementById("product").value;
+    const quantity = document.getElementById("quantity").value;
+    const message = document.getElementById("message").value;
+
+    const text =
+        "ΑΙΤΗΜΑ ΠΡΟΣΦΟΡΑΣ\n\n" +
+        "Ονοματεπώνυμο: " + name + "\n" +
+        "Τηλέφωνο: " + phone + "\n" +
+        "Επωνυμία επιχείρησης: " + company + "\n" +
+        "Περιοχή: " + area + "\n" +
+        "Προϊόν: " + product + "\n" +
+        "Ποσότητα: " + quantity + "\n\n" +
+        "Μήνυμα:\n" + message;
+
+    const whatsapp =
+        "https://wa.me/306955488220?text=" +
+        encodeURIComponent(text);
+
+    window.open(whatsapp, "_blank");
+}
+
+</script>
+
+
+</body>
+</html>
