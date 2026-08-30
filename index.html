@@ -4,13 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Κωστακόπουλος Βασίλειος | Πέλλετ - Καυσόξυλα - Θέρμανση</title>
+<title>Κωστακόπουλος Βασίλειος | Πέλλετ - Καυσόξυλα</title>
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 * {
     margin: 0;
@@ -68,7 +64,7 @@ header {
 }
 
 .logo span {
-    color: #d58a5b;
+    color: white;
 }
 
 nav {
@@ -77,9 +73,8 @@ nav {
 }
 
 nav a {
-    color: rgba(255,255,255,.78);
+    color: rgba(255,255,255,.75);
     font-size: 13px;
-    transition: .2s;
 }
 
 nav a:hover {
@@ -93,7 +88,6 @@ nav a:hover {
     border-radius: 4px;
     font-size: 13px;
     font-weight: bold;
-    transition: .2s;
 }
 
 .header-phone:hover {
@@ -114,8 +108,8 @@ nav a:hover {
 }
 
 .hero-content {
-    max-width: 760px;
-    padding-top: 75px;
+    max-width: 780px;
+    padding-top: 70px;
 }
 
 .small-title {
@@ -127,18 +121,17 @@ nav a:hover {
 }
 
 .hero h1 {
-    margin-top: 14px;
+    margin-top: 16px;
     font-family: Georgia, serif;
-    font-size: clamp(40px, 6vw, 68px);
-    line-height: 1.04;
+    font-size: clamp(36px, 6vw, 70px);
+    line-height: 1.05;
     color: white;
-    max-width: 760px;
 }
 
 .hero-text {
-    max-width: 650px;
+    max-width: 680px;
     margin-top: 24px;
-    color: rgba(255,255,255,.72);
+    color: rgba(255,255,255,.7);
     font-size: 17px;
 }
 
@@ -158,7 +151,6 @@ nav a:hover {
     border-radius: 4px;
     font-size: 13px;
     font-weight: bold;
-    transition: .2s;
 }
 
 .btn-primary {
@@ -181,11 +173,11 @@ nav a:hover {
 
 
 /* =========================
-   QUICK INFO
+   INFO
 ========================= */
 
 .top-info {
-    padding: 50px 0;
+    padding: 55px 0;
     background: #e7ded4;
 }
 
@@ -218,7 +210,7 @@ nav a:hover {
 .info-card h3 {
     margin-top: 7px;
     font-family: Georgia, serif;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .info-card p {
@@ -256,7 +248,7 @@ nav a:hover {
 .intro h2 {
     margin-top: 10px;
     font-family: Georgia, serif;
-    font-size: clamp(36px, 4vw, 52px);
+    font-size: clamp(37px, 4vw, 52px);
     line-height: 1.1;
 }
 
@@ -267,7 +259,7 @@ nav a:hover {
 }
 
 .offer-box {
-    padding: 38px;
+    padding: 40px;
     background: #45352b;
     border: 1px solid rgba(255,255,255,.1);
     border-left: 4px solid #b96b3d;
@@ -302,13 +294,13 @@ nav a:hover {
 
 .section-heading {
     max-width: 720px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .section-heading h2 {
     margin-top: 9px;
     font-family: Georgia, serif;
-    font-size: clamp(36px, 4vw, 52px);
+    font-size: clamp(37px, 4vw, 52px);
     line-height: 1.1;
 }
 
@@ -318,23 +310,6 @@ nav a:hover {
     font-size: 14px;
 }
 
-
-/* CATEGORY */
-
-.category-title {
-    margin: 45px 0 18px;
-    font-family: Georgia, serif;
-    font-size: 28px;
-    color: #302820;
-}
-
-.category-title:first-of-type {
-    margin-top: 0;
-}
-
-
-/* PRODUCT GRID */
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -342,15 +317,13 @@ nav a:hover {
 }
 
 
-/* PRODUCT CARD */
+/* ΜΑΥΡΑ ΚΟΥΤΑΚΙΑ ΠΡΟΪΟΝΤΩΝ */
 
 .product-card {
-    min-height: 245px;
-    padding: 28px;
+    min-height: 220px;
+    padding: 30px;
     display: flex;
     align-items: flex-end;
-    position: relative;
-    overflow: hidden;
     background: #30261f;
     color: white;
     border: 1px solid #30261f;
@@ -358,42 +331,22 @@ nav a:hover {
 }
 
 .product-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     border-color: #b96b3d;
-    box-shadow: 0 12px 30px rgba(48,40,32,.14);
-}
-
-
-/* PHOTO PLACEHOLDER */
-
-.product-photo {
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(
-            to top,
-            rgba(48,38,31,.98),
-            rgba(48,38,31,.18)
-        );
-}
-
-.product-content {
-    position: relative;
-    z-index: 2;
+    box-shadow: 0 12px 30px rgba(48,40,32,.15);
 }
 
 .product-card h3 {
     margin-top: 7px;
     color: white;
     font-family: Georgia, serif;
-    font-size: 29px;
+    font-size: 30px;
     line-height: 1.1;
 }
 
 .product-card p {
-    margin-top: 9px;
-    max-width: 430px;
-    color: rgba(255,255,255,.7);
+    margin-top: 10px;
+    color: rgba(255,255,255,.68);
     font-size: 13px;
 }
 
@@ -410,7 +363,7 @@ nav a:hover {
 ========================= */
 
 .professionals {
-    padding: 80px 0;
+    padding: 90px 0;
     background: #30261f;
     color: white;
 }
@@ -456,17 +409,13 @@ nav a:hover {
     font-size: 13px;
 }
 
-.professional-side .btn {
-    margin-top: 20px;
-}
-
 
 /* =========================
    CONTACT
 ========================= */
 
 .contact {
-    padding: 90px 0;
+    padding: 95px 0;
     background: #dfe5df;
 }
 
@@ -521,34 +470,31 @@ nav a:hover {
     font-weight: bold;
 }
 
+.contact-info .btn {
+    margin-top: 25px;
+}
 
-/* MAP */
+
+/* GOOGLE MAPS */
 
 .maps-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-top: 14px;
-    min-height: 42px;
-    padding: 0 17px;
+    min-height: 44px;
+    padding: 0 18px;
     background: #b96b3d;
     color: white !important;
     border-radius: 4px;
     font-size: 12px;
     font-weight: bold;
-    transition: .2s;
+    transition: .25s;
 }
 
 .maps-button:hover {
     background: #9d542f;
 }
-
-.contact-info .btn {
-    margin-top: 25px;
-}
-
-
-/* FORM */
 
 form {
     margin-top: 22px;
@@ -597,7 +543,6 @@ textarea {
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    transition: .2s;
 }
 
 .submit:hover {
@@ -606,20 +551,11 @@ textarea {
 
 
 /* =========================
-   MOBILE CONTACT BAR
-========================= */
-
-.mobile-contact {
-    display: none;
-}
-
-
-/* =========================
    FOOTER
 ========================= */
 
 footer {
-    padding: 35px 0 80px;
+    padding: 35px 0;
     background: #30261f;
     color: rgba(255,255,255,.55);
     text-align: center;
@@ -632,7 +568,7 @@ footer strong {
 
 
 /* =========================
-   TABLET
+   MOBILE
 ========================= */
 
 @media (max-width: 900px) {
@@ -654,23 +590,15 @@ footer strong {
     }
 
     .product-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 600px) {
 
     .container {
         width: calc(100% - 30px);
-    }
-
-    .header-inner {
-        height: 72px;
     }
 
     .logo {
@@ -683,28 +611,15 @@ footer strong {
     }
 
     .hero {
-        min-height: 620px;
-    }
-
-    .hero-content {
-        padding-top: 65px;
+        min-height: 610px;
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 43px;
     }
 
     .hero-text {
         font-size: 15px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .btn {
-        width: 100%;
     }
 
     .top-info,
@@ -715,19 +630,6 @@ footer strong {
         padding: 70px 0;
     }
 
-    .category-title {
-        margin-top: 35px;
-        font-size: 25px;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .product-card {
-        min-height: 225px;
-    }
-
     .form-row {
         grid-template-columns: 1fr;
     }
@@ -735,27 +637,6 @@ footer strong {
     .contact-info,
     .contact-form {
         padding: 27px;
-    }
-
-    .mobile-contact {
-        position: fixed;
-        display: grid;
-        grid-template-columns: 1fr;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        z-index: 100;
-    }
-
-    .mobile-contact a {
-        min-height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #b96b3d;
-        color: white;
-        font-size: 13px;
-        font-weight: bold;
     }
 }
 
@@ -766,20 +647,17 @@ footer strong {
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
 <div class="container header-inner">
 
 <a href="#" class="logo">
-    ΚΩΣΤΑΚΟΠΟΥΛΟΣ <span>ΒΑΣΙΛΕΙΟΣ</span>
+    ΚΩΣΤΑΚΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ
 </a>
 
 <nav>
-    <a href="#proionta">Προϊόντα</a>
     <a href="#epaggelmaties">Επαγγελματίες</a>
     <a href="#epikoinonia">Επικοινωνία</a>
 </nav>
@@ -793,9 +671,7 @@ footer strong {
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -804,18 +680,18 @@ footer strong {
 <div class="hero-content">
 
 <div class="small-title">
-    Κωστακόπουλος Βασίλειος
+    Καύσιμα & Θέρμανση
 </div>
 
 <h1>
-    Πέλλετ, καυσόξυλα
-    και προϊόντα θέρμανσης.
+    ΟΛΑ ΟΣΑ ΧΡΕΙΑΖΕΣΤΕ
+    ΓΙΑ ΤΗΝ ΘΕΡΜΑΝΣΗ ΣΑΣ.
 </h1>
 
 <p class="hero-text">
-    Προϊόντα θέρμανσης για το σπίτι,
-    επαγγελματικούς χώρους και επιχειρήσεις.
-    Διαθεσιμότητα και τιμές κατόπιν επικοινωνίας.
+    Πέλλετ, καυσόξυλα, μπρικέτες, κάρβουνα,
+    σόμπες και είδη θέρμανσης για κατοικίες
+    και επαγγελματικούς χώρους.
 </p>
 
 <div class="hero-buttons">
@@ -825,7 +701,7 @@ footer strong {
 </a>
 
 <a href="#epikoinonia" class="btn btn-outline">
-    Ζητήστε προσφορά
+    Επικοινωνήστε μαζί μας
 </a>
 
 </div>
@@ -837,9 +713,7 @@ footer strong {
 </section>
 
 
-<!-- =========================
-     INFO
-========================= -->
+<!-- INFO -->
 
 <section class="top-info">
 
@@ -892,9 +766,7 @@ footer strong {
 </section>
 
 
-<!-- =========================
-     INTRO
-========================= -->
+<!-- INTRO -->
 
 <section class="intro">
 
@@ -912,9 +784,9 @@ footer strong {
 </h2>
 
 <p>
-    Πέλλετ, καυσόξυλα, μπρικέτες,
-    κάρβουνα, σόμπες και ανταλλακτικά
-    για κατοικίες και επαγγελματικούς χώρους.
+    Επιλεγμένα καύσιμα και προϊόντα
+    θέρμανσης για κατοικίες,
+    επαγγελματικούς χώρους και επιχειρήσεις.
 </p>
 
 <p>
@@ -928,7 +800,7 @@ footer strong {
 <div class="offer-box">
 
 <h3>
-    Ζητήστε προσφορά
+    Επικοινωνήστε μαζί μας
 </h3>
 
 <p>
@@ -948,9 +820,7 @@ footer strong {
 </section>
 
 
-<!-- =========================
-     PRODUCTS
-========================= -->
+<!-- PRODUCTS -->
 
 <section class="products" id="proionta">
 
@@ -967,27 +837,18 @@ footer strong {
 </h2>
 
 <p>
-    Επιλεγμένα προϊόντα για οικιακή
-    και επαγγελματική χρήση.
+    Προϊόντα για οικιακή και επαγγελματική χρήση.
 </p>
 
 </div>
 
-
-<!-- ΚΑΥΣΙΜΑ -->
-
-<h3 class="category-title">
-    Καύσιμα
-</h3>
 
 <div class="product-grid">
 
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Καύσιμο θέρμανσης
@@ -1013,9 +874,7 @@ footer strong {
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Καύσιμο θέρμανσης
@@ -1041,9 +900,7 @@ footer strong {
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Καύσιμο
@@ -1069,9 +926,7 @@ footer strong {
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Καύσιμο
@@ -1094,23 +949,10 @@ footer strong {
 
 </article>
 
-</div>
-
-
-<!-- ΣΟΜΠΕΣ -->
-
-<h3 class="category-title">
-    Σόμπες & Θέρμανση
-</h3>
-
-<div class="product-grid">
-
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Θέρμανση
@@ -1140,9 +982,7 @@ footer strong {
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Θέρμανση
@@ -1168,9 +1008,7 @@ footer strong {
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Θέρμανση
@@ -1196,9 +1034,7 @@ footer strong {
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Ανταλλακτικά
@@ -1221,23 +1057,10 @@ footer strong {
 
 </article>
 
-</div>
-
-
-<!-- ΤΡΟΦΕΣ -->
-
-<h3 class="category-title">
-    Τροφές κατοικίδιων
-</h3>
-
-<div class="product-grid">
-
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Τροφές κατοικίδιων
@@ -1263,9 +1086,7 @@ footer strong {
 
 <article class="product-card">
 
-<div class="product-photo"></div>
-
-<div class="product-content">
+<div>
 
 <div class="product-type">
     Τροφές κατοικίδιων
@@ -1288,6 +1109,7 @@ footer strong {
 
 </article>
 
+
 </div>
 
 </div>
@@ -1295,9 +1117,7 @@ footer strong {
 </section>
 
 
-<!-- =========================
-     PROFESSIONALS
-========================= -->
+<!-- PROFESSIONALS -->
 
 <section class="professionals" id="epaggelmaties">
 
@@ -1329,17 +1149,13 @@ footer strong {
 <div class="professional-side">
 
 <h3>
-    Ζητήστε τιμή
+    Επαγγελματικές προμήθειες
 </h3>
 
 <p>
-    Αναφέρετε το προϊόν και την ποσότητα
-    που σας ενδιαφέρει.
+    Για ποσότητες και τιμές επαγγελματικής
+    προμήθειας, επικοινωνήστε μαζί μας.
 </p>
-
-<a href="#epikoinonia" class="btn btn-primary">
-    Επικοινωνήστε μαζί μας
-</a>
 
 </div>
 
@@ -1350,9 +1166,7 @@ footer strong {
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="epikoinonia">
 
@@ -1365,12 +1179,12 @@ footer strong {
 </div>
 
 <h2>
-    Ζητήστε προσφορά
+    Επικοινωνήστε μαζί μας
 </h2>
 
 <p>
-    Συμπληρώστε τα στοιχεία σας
-    και γράψτε τι ακριβώς χρειάζεστε.
+    Καλέστε μας για πληροφορίες σχετικά
+    με προϊόντα, ποσότητες, διαθεσιμότητα και τιμές.
 </p>
 
 </div>
@@ -1416,7 +1230,7 @@ footer strong {
     target="_blank"
     class="maps-button"
 >
-    Δείτε μας στον χάρτη
+    Δείτε την τοποθεσία μας στο Google Maps
 </a>
 
 </div>
@@ -1441,13 +1255,12 @@ footer strong {
 </div>
 
 
-<!-- FORM -->
-
 <div class="contact-form">
 
 <h2>
-    Επικοινωνήστε μαζί μας
+    Στείλτε το αίτημά σας
 </h2>
+
 
 <form onsubmit="sendForm(event)">
 
@@ -1536,9 +1349,7 @@ footer strong {
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1569,41 +1380,14 @@ footer strong {
 </footer>
 
 
-<!-- =========================
-     MOBILE CALL BUTTON
-========================= -->
-
-<div class="mobile-contact">
-
-<a href="tel:6949255398">
-    📞 Καλέστε μας — 694 925 5398
-</a>
-
-</div>
-
-
-<!-- =========================
-     FORM SCRIPT
-========================= -->
-
 <script>
 
 function sendForm(event) {
 
     event.preventDefault();
 
-    /*
-       ΠΡΟΣΩΡΙΝΑ η φόρμα δεν στέλνει email.
-
-       Όταν πάρεις το email,
-       θα συνδέσουμε εδώ την υπηρεσία
-       αποστολής και θα εμφανίζεται
-       μήνυμα επιτυχούς αποστολής.
-    */
-
     alert(
-        "Το αίτημά σας καταχωρήθηκε.\n\n" +
-        "Η φόρμα θα συνδεθεί με το email της επιχείρησης."
+        "Η φόρμα θα συνδεθεί με το email της επιχείρησης μόλις έχουμε το email."
     );
 }
 
