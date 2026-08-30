@@ -197,8 +197,26 @@ nav a:hover {
     padding: 21px 25px;
 }
 
+.quick-top {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.quick-icon {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #eee6dd;
+    color: #a9663e;
+    font-size: 13px;
+}
+
 .quick-item small {
-    display: block;
     color: #a9663e;
     font-size: 10px;
     font-weight: 700;
@@ -208,11 +226,12 @@ nav a:hover {
 
 .quick-item strong {
     display: block;
-    margin-top: 4px;
+    margin-top: 7px;
     color: #30362f;
     font-family: Georgia, serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 1.35;
 }
 
 
@@ -221,27 +240,47 @@ nav a:hover {
 ========================= */
 
 .products {
-    padding: 75px 0 90px;
+    padding: 45px 0 90px;
     background: #f7f4ef;
 }
 
 .products-heading {
-    max-width: 700px;
+    width: 100%;
     margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.products-heading::before,
+.products-heading::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #d6d0c6;
 }
 
 .products-heading h2 {
+    position: relative;
     color: #30362f;
     font-family: Georgia, serif;
-    font-size: clamp(34px, 4vw, 50px);
-    line-height: 1.1;
+    font-size: clamp(30px, 3.5vw, 43px);
+    line-height: 1;
     font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
-.products-heading p {
-    margin-top: 13px;
-    color: #697067;
-    font-size: 14px;
+.products-heading h2::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    background: #a9663e;
+    left: 50%;
+    bottom: -11px;
+    transform: translateX(-50%);
 }
 
 
@@ -267,8 +306,11 @@ nav a:hover {
 .category-title h3 {
     color: #30362f;
     font-family: Georgia, serif;
-    font-size: 29px;
+    font-size: 25px;
     font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    white-space: nowrap;
 }
 
 .category-line {
@@ -313,21 +355,10 @@ nav a:hover {
     box-shadow: 0 10px 25px rgba(50,55,48,.09);
 }
 
-
-/* =========================
-   PRODUCT IMAGE
-========================= */
-
 .product-image {
     width: 100%;
     height: 205px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #e8e3da;
-    color: #8b877f;
-    font-size: 11px;
-    letter-spacing: .5px;
     overflow: hidden;
 }
 
@@ -338,25 +369,11 @@ nav a:hover {
     object-fit: cover;
 }
 
-
-/* =========================
-   PRODUCT INFO
-========================= */
-
 .product-info {
     padding: 18px 18px 20px;
 }
 
-.product-info small {
-    color: #a9663e;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
 .product-info h4 {
-    margin-top: 5px;
     color: #30362f;
     font-family: Georgia, serif;
     font-size: 24px;
@@ -369,6 +386,13 @@ nav a:hover {
     color: #72786f;
     font-size: 12px;
     line-height: 1.5;
+}
+
+.product-price {
+    margin-top: 13px;
+    color: #a9663e;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 
@@ -464,17 +488,14 @@ nav a:hover {
     display: grid;
     grid-template-columns: .8fr 1.2fr;
     gap: 17px;
+    align-items: stretch;
 }
-
-
-/* =========================
-   CONTACT INFO
-========================= */
 
 .contact-info {
     background: #fafbf9;
     border: 1px solid #ccd4cc;
     padding: 28px;
+    height: 100%;
 }
 
 .contact-info h3 {
@@ -507,11 +528,6 @@ nav a:hover {
     font-weight: 700;
 }
 
-
-/* =========================
-   GOOGLE MAPS
-========================= */
-
 .maps-button {
     display: flex;
     align-items: center;
@@ -532,11 +548,6 @@ nav a:hover {
     background: #8e5332;
     transform: translateY(-1px);
 }
-
-
-/* =========================
-   CONTACT FORM
-========================= */
 
 .contact-form {
     background: #fafbf9;
@@ -656,9 +667,6 @@ footer strong {
         width: calc(100% - 28px);
     }
 
-
-    /* HEADER */
-
     .header-inner {
         height: 70px;
         gap: 10px;
@@ -675,9 +683,6 @@ footer strong {
         font-size: 10px;
         white-space: nowrap;
     }
-
-
-    /* HERO */
 
     .hero {
         min-height: 600px;
@@ -715,9 +720,6 @@ footer strong {
         padding: 0 18px;
     }
 
-
-    /* QUICK INFO */
-
     .quick-grid {
         grid-template-columns: 1fr;
     }
@@ -730,23 +732,38 @@ footer strong {
         font-size: 18px;
     }
 
-
-    /* PRODUCTS */
-
     .products {
-        padding: 65px 0;
+        padding: 45px 0;
+    }
+
+    .products-heading {
+        margin-bottom: 36px;
+        gap: 11px;
     }
 
     .products-heading h2 {
-        font-size: 36px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .products-heading h2::after {
+        width: 28px;
+        height: 3px;
+        bottom: -9px;
     }
 
     .category {
         margin-top: 42px;
     }
 
+    .category-title {
+        gap: 10px;
+        margin-bottom: 17px;
+    }
+
     .category-title h3 {
-        font-size: 25px;
+        font-size: 21px;
+        letter-spacing: .4px;
     }
 
     .product-grid,
@@ -767,9 +784,6 @@ footer strong {
         font-size: 23px;
     }
 
-
-    /* PROFESSIONALS */
-
     .professionals {
         padding: 65px 0;
     }
@@ -782,9 +796,6 @@ footer strong {
     .professional-content h2 {
         font-size: 35px;
     }
-
-
-    /* CONTACT */
 
     .contact {
         padding: 65px 0 30px;
@@ -826,11 +837,6 @@ footer strong {
 
 }
 
-
-/* =========================
-   VERY SMALL PHONES
-========================= */
-
 @media (max-width: 380px) {
 
     .logo {
@@ -846,6 +852,10 @@ footer strong {
         font-size: 31px;
     }
 
+    .products-heading h2 {
+        font-size: 28px;
+    }
+
 }
 
 </style>
@@ -854,10 +864,6 @@ footer strong {
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
@@ -888,10 +894,6 @@ footer strong {
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
-
 <section class="hero">
 
 <div class="container">
@@ -899,7 +901,7 @@ footer strong {
 <div class="hero-content">
 
 <div class="hero-label">
-    Καύσιμα & Θέρμανση
+    Καύσιμα και Θέρμανση
 </div>
 
 <h1>
@@ -913,13 +915,6 @@ footer strong {
     Για οικιακή και επαγγελματική χρήση.
 </p>
 
-<div class="hero-buttons">
-
-<a href="#proionta" class="btn btn-primary">
-    Δείτε τα προϊόντα
-</a>
-
-</div>
 
 </div>
 
@@ -928,21 +923,26 @@ footer strong {
 </section>
 
 
-<!-- =========================
-     QUICK INFO
-========================= -->
-
 <section class="quick-info">
 
 <div class="container">
 
 <div class="quick-grid">
 
+
 <div class="quick-item">
+
+<div class="quick-top">
+
+<div class="quick-icon">
+    📍
+</div>
 
 <small>
     Περιοχή
 </small>
+
+</div>
 
 <strong>
     Λιβαδειά Βοιωτίας
@@ -953,12 +953,20 @@ footer strong {
 
 <div class="quick-item">
 
+<div class="quick-top">
+
+<div class="quick-icon">
+    🚚
+</div>
+
 <small>
-    Χρήση
+    Μεταφορά
 </small>
 
+</div>
+
 <strong>
-    Οικιακή & επαγγελματική
+    Παράδοση στον χώρο σας, με επιπλέον χρέωση κατόπιν συνεννόησης.
 </strong>
 
 </div>
@@ -966,15 +974,24 @@ footer strong {
 
 <div class="quick-item">
 
+<div class="quick-top">
+
+<div class="quick-icon">
+    🏠
+</div>
+
 <small>
-    Τηλέφωνο
+    Χρήση
 </small>
 
+</div>
+
 <strong>
-    694 925 5398
+    Ιδιώτες και Επαγγελματίες.
 </strong>
 
 </div>
+
 
 </div>
 
@@ -982,10 +999,6 @@ footer strong {
 
 </section>
 
-
-<!-- =========================
-     PRODUCTS
-========================= -->
 
 <section class="products" id="proionta">
 
@@ -995,25 +1008,18 @@ footer strong {
 <div class="products-heading">
 
 <h2>
-    Τα προϊόντα μας
+    ΠΡΟΪΟΝΤΑ
 </h2>
-
-<p>
-    Καύσιμα, θέρμανση, ανταλλακτικά
-    και είδη για το σπίτι.
-</p>
 
 </div>
 
-
-<!-- CATEGORY 1 -->
 
 <div class="category">
 
 <div class="category-title">
 
 <h3>
-    Καύσιμα Θέρμανσης
+    ΚΑΥΣΙΜΑ ΘΕΡΜΑΝΣΗΣ
 </h3>
 
 <div class="category-line"></div>
@@ -1027,22 +1033,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/pellet.jpg" alt="Πέλλετ">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Πέλλετ -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Καύσιμο θέρμανσης
-</small>
 
 <h4>
     Πέλλετ
@@ -1052,6 +1046,10 @@ footer strong {
     Πέλλετ για οικιακή και επαγγελματική χρήση.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1060,22 +1058,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/kafsoxyla.jpg" alt="Καυσόξυλα">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Καυσόξυλα -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Καύσιμο θέρμανσης
-</small>
 
 <h4>
     Καυσόξυλα
@@ -1085,6 +1071,10 @@ footer strong {
     Καυσόξυλα για τζάκια, ξυλόσομπες και θέρμανση.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1093,22 +1083,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/briketes.jpg" alt="Μπρικέτες">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Μπρικέτες -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Καύσιμο
-</small>
 
 <h4>
     Μπρικέτες
@@ -1118,6 +1096,10 @@ footer strong {
     Πρακτική επιλογή καυσίμου για θέρμανση.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1126,22 +1108,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/karvouna.jpg" alt="Κάρβουνα">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Κάρβουνα -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Καύσιμο
-</small>
 
 <h4>
     Κάρβουνα
@@ -1151,6 +1121,10 @@ footer strong {
     Κάρβουνα για οικιακή και επαγγελματική χρήση.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1161,14 +1135,12 @@ footer strong {
 </div>
 
 
-<!-- CATEGORY 2 -->
-
 <div class="category">
 
 <div class="category-title">
 
 <h3>
-    Σόμπες & Θέρμανση
+    ΣΟΜΠΕΣ ΚΑΙ ΘΕΡΜΑΝΣΗ
 </h3>
 
 <div class="category-line"></div>
@@ -1182,22 +1154,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/sompes-pellet.jpg" alt="Σόμπες Πέλλετ">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Σόμπες Πέλλετ -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Θέρμανση
-</small>
 
 <h4>
     Σόμπες Πέλλετ
@@ -1207,6 +1167,10 @@ footer strong {
     Ιταλικές σόμπες πέλλετ για αποτελεσματική θέρμανση.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1215,22 +1179,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/sompes-xyloy.jpg" alt="Σόμπες Ξύλου">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Σόμπες Ξύλου -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Θέρμανση
-</small>
 
 <h4>
     Σόμπες Ξύλου
@@ -1240,6 +1192,10 @@ footer strong {
     Σόμπες ξύλου για ζεστό και άνετο χώρο.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1248,22 +1204,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/sompes-petrelaiou.jpg" alt="Σόμπες Πετρελαίου">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Σόμπες Πετρελαίου -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Θέρμανση
-</small>
 
 <h4>
     Σόμπες Πετρελαίου
@@ -1273,6 +1217,10 @@ footer strong {
     Λύσεις θέρμανσης για διαφορετικές ανάγκες χώρου.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1283,14 +1231,12 @@ footer strong {
 </div>
 
 
-<!-- CATEGORY 3 -->
-
 <div class="category">
 
 <div class="category-title">
 
 <h3>
-    Ανταλλακτικά
+    ΑΝΤΑΛΛΑΚΤΙΚΑ
 </h3>
 
 <div class="category-line"></div>
@@ -1300,25 +1246,14 @@ footer strong {
 
 <div class="product-grid two">
 
+
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/antallaktika.jpg" alt="Ανταλλακτικά">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Ανταλλακτικά -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Ανταλλακτικά
-</small>
 
 <h4>
     Ανταλλακτικά
@@ -1328,6 +1263,10 @@ footer strong {
     Ανταλλακτικά και εξαρτήματα για σόμπες πέλλετ.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1338,14 +1277,12 @@ footer strong {
 </div>
 
 
-<!-- CATEGORY 4 -->
-
 <div class="category">
 
 <div class="category-title">
 
 <h3>
-    Τροφές Κατοικίδιων
+    ΤΡΟΦΕΣ ΚΑΤΟΙΚΙΔΙΩΝ
 </h3>
 
 <div class="category-line"></div>
@@ -1359,22 +1296,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/trofes-skylon.jpg" alt="Τροφές Σκύλων">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Τροφές Σκύλων -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Τροφές κατοικίδιων
-</small>
 
 <h4>
     Τροφές Σκύλων
@@ -1384,6 +1309,10 @@ footer strong {
     Τροφές για την καθημερινή διατροφή του σκύλου.
 </p>
 
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
+
 </div>
 
 </article>
@@ -1392,22 +1321,10 @@ footer strong {
 <article class="product-card">
 
 <div class="product-image">
-
-<!--
-<img src="images/trofes-gaton.jpg" alt="Τροφές Γατών">
--->
-
-<span>
-    Φωτογραφία προϊόντος
-</span>
-
+    <!-- Φωτογραφία Τροφές Γατών -->
 </div>
 
 <div class="product-info">
-
-<small>
-    Τροφές κατοικίδιων
-</small>
 
 <h4>
     Τροφές Γατών
@@ -1416,6 +1333,10 @@ footer strong {
 <p>
     Τροφές για τις καθημερινές ανάγκες της γάτας.
 </p>
+
+<div class="product-price">
+    Τιμή κατόπιν συνεννόησης
+</div>
 
 </div>
 
@@ -1431,10 +1352,6 @@ footer strong {
 
 </section>
 
-
-<!-- =========================
-     PROFESSIONALS
-========================= -->
 
 <section class="professionals" id="epaggelmaties">
 
@@ -1480,10 +1397,6 @@ footer strong {
 
 </section>
 
-
-<!-- =========================
-     CONTACT
-========================= -->
 
 <section class="contact" id="epikoinonia">
 
@@ -1580,7 +1493,7 @@ footer strong {
 <input
     type="text"
     id="company"
-    placeholder="Επωνυμία επιχείρησης"
+    placeholder="Επωνυμία επιχείρησης (προαιρετικά)"
 >
 
 <input
@@ -1640,10 +1553,6 @@ footer strong {
 
 </section>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
