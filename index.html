@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Κωστακόπουλος Βασίλειος | Πέλλετ - Καυσόξυλα</title>
+<title>Κωστακόπουλος Βασίλειος | Πέλλετ - Καυσόξυλα - Θέρμανση</title>
 
 <style>
 
@@ -20,8 +20,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f3eee8;
-    color: #302820;
+    background: #f7f4ef;
+    color: #30362f;
     line-height: 1.6;
 }
 
@@ -31,7 +31,7 @@ a {
 }
 
 .container {
-    width: min(1160px, calc(100% - 40px));
+    width: min(1180px, calc(100% - 36px));
     margin: auto;
 }
 
@@ -49,49 +49,48 @@ header {
 }
 
 .header-inner {
-    height: 82px;
+    height: 78px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(255,255,255,.18);
+    gap: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.22);
 }
 
 .logo {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: .5px;
-}
-
-.logo span {
-    color: white;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    white-space: nowrap;
 }
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 28px;
 }
 
 nav a {
-    color: rgba(255,255,255,.75);
+    color: rgba(255,255,255,.82);
     font-size: 13px;
 }
 
 nav a:hover {
-    color: white;
+    color: #fff;
 }
 
 .header-phone {
-    background: #b96b3d;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 4px;
+    background: #a9663e;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .header-phone:hover {
-    background: #9d542f;
+    background: #8e5332;
 }
 
 
@@ -100,186 +99,120 @@ nav a:hover {
 ========================= */
 
 .hero {
-    min-height: 650px;
+    min-height: 620px;
     display: flex;
     align-items: center;
-    background: linear-gradient(120deg, #30261f, #49372c);
-    color: white;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(35,45,38,.96) 0%,
+            rgba(35,45,38,.82) 48%,
+            rgba(35,45,38,.48) 100%
+        ),
+        url("images/hero.jpg") center/cover no-repeat;
+
+    color: #fff;
 }
 
 .hero-content {
-    max-width: 780px;
-    padding-top: 70px;
+    max-width: 700px;
+    padding-top: 55px;
 }
 
-.small-title {
-    color: #d58a5b;
+.hero-label {
+    color: #d6a477;
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .hero h1 {
-    margin-top: 16px;
+    margin-top: 14px;
+    max-width: 650px;
     font-family: Georgia, serif;
-    font-size: clamp(36px, 6vw, 70px);
-    line-height: 1.05;
-    color: white;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.08;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .hero-text {
-    max-width: 680px;
-    margin-top: 24px;
-    color: rgba(255,255,255,.7);
-    font-size: 17px;
+    max-width: 610px;
+    margin-top: 22px;
+    color: rgba(255,255,255,.78);
+    font-size: 16px;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 12px;
+    gap: 11px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 28px;
 }
 
 .btn {
+    min-height: 47px;
+    padding: 0 21px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 48px;
-    padding: 0 22px;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .btn-primary {
-    background: #b96b3d;
-    color: white;
+    background: #a9663e;
+    color: #fff;
 }
 
 .btn-primary:hover {
-    background: #9d542f;
-}
-
-.btn-outline {
-    border: 1px solid rgba(255,255,255,.35);
-    color: white;
-}
-
-.btn-outline:hover {
-    background: rgba(255,255,255,.08);
+    background: #8e5332;
 }
 
 
 /* =========================
-   INFO
+   QUICK INFO
 ========================= */
 
-.top-info {
-    padding: 55px 0;
-    background: #e7ded4;
+.quick-info {
+    background: #e9e4db;
+    padding: 24px 0;
 }
 
-.info-grid {
+.quick-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: white;
-    border: 1px solid #d7ccc1;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #d2ccc1;
+    border: 1px solid #d2ccc1;
 }
 
-.info-card {
-    padding: 30px 35px;
+.quick-item {
+    background: #f5f2ed;
+    padding: 21px 25px;
 }
 
-.info-card + .info-card {
-    border-left: 1px solid #d7ccc1;
-}
-
-.info-label,
-.section-label,
-.product-type,
-.professional-label {
-    color: #b96b3d;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.info-card h3 {
-    margin-top: 7px;
-    font-family: Georgia, serif;
-    font-size: 26px;
-}
-
-.info-card p {
-    margin-top: 9px;
-    color: #756b62;
-    font-size: 13px;
-}
-
-
-/* =========================
-   INTRO
-========================= */
-
-.intro {
-    padding: 90px 0;
-    background: #30261f;
-    color: white;
-}
-
-.intro-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.intro-label {
-    color: #d58a5b;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.intro h2 {
-    margin-top: 10px;
-    font-family: Georgia, serif;
-    font-size: clamp(37px, 4vw, 52px);
-    line-height: 1.1;
-}
-
-.intro p {
-    margin-top: 20px;
-    color: rgba(255,255,255,.68);
-    font-size: 15px;
-}
-
-.offer-box {
-    padding: 40px;
-    background: #45352b;
-    border: 1px solid rgba(255,255,255,.1);
-    border-left: 4px solid #b96b3d;
-}
-
-.offer-box h3 {
-    font-family: Georgia, serif;
-    font-size: 30px;
-}
-
-.offer-box p {
-    margin-top: 12px;
-    color: rgba(255,255,255,.68);
-}
-
-.offer-box strong {
+.quick-item small {
     display: block;
-    margin-top: 20px;
-    color: #d58a5b;
-    font-size: 12px;
+    color: #a9663e;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.quick-item strong {
+    display: block;
+    margin-top: 4px;
+    color: #30362f;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 
@@ -288,73 +221,154 @@ nav a:hover {
 ========================= */
 
 .products {
-    padding: 90px 0;
-    background: #f3eee8;
+    padding: 75px 0 90px;
+    background: #f7f4ef;
 }
 
-.section-heading {
-    max-width: 720px;
-    margin-bottom: 40px;
+.products-heading {
+    max-width: 700px;
+    margin-bottom: 42px;
 }
 
-.section-heading h2 {
-    margin-top: 9px;
+.products-heading h2 {
+    color: #30362f;
     font-family: Georgia, serif;
-    font-size: clamp(37px, 4vw, 52px);
+    font-size: clamp(34px, 4vw, 50px);
     line-height: 1.1;
+    font-weight: 400;
 }
 
-.section-heading p {
-    margin-top: 12px;
-    color: #756b62;
+.products-heading p {
+    margin-top: 13px;
+    color: #697067;
     font-size: 14px;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.category {
+    margin-top: 55px;
+}
+
+.category:first-of-type {
+    margin-top: 0;
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.category-title h3 {
+    color: #30362f;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.category-line {
+    height: 1px;
+    flex: 1;
+    background: #d8d2c8;
 }
 
 
-/* ΜΑΥΡΑ ΚΟΥΤΑΚΙΑ ΠΡΟΪΟΝΤΩΝ */
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.product-grid.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-grid.two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
 
 .product-card {
-    min-height: 220px;
-    padding: 30px;
-    display: flex;
-    align-items: flex-end;
-    background: #30261f;
-    color: white;
-    border: 1px solid #30261f;
-    transition: .25s;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd7ce;
+    transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-4px);
-    border-color: #b96b3d;
-    box-shadow: 0 12px 30px rgba(48,40,32,.15);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(50,55,48,.09);
 }
 
-.product-card h3 {
-    margin-top: 7px;
-    color: white;
-    font-family: Georgia, serif;
-    font-size: 30px;
-    line-height: 1.1;
-}
 
-.product-card p {
-    margin-top: 10px;
-    color: rgba(255,255,255,.68);
-    font-size: 13px;
-}
+/* =========================
+   PRODUCT IMAGE
+========================= */
 
-.product-price {
-    margin-top: 13px;
-    color: #d58a5b;
+.product-image {
+    width: 100%;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8e3da;
+    color: #8b877f;
     font-size: 11px;
-    font-weight: bold;
+    letter-spacing: .5px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.product-info {
+    padding: 18px 18px 20px;
+}
+
+.product-info small {
+    color: #a9663e;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.product-info h4 {
+    margin-top: 5px;
+    color: #30362f;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.product-info p {
+    margin-top: 8px;
+    color: #72786f;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 
@@ -363,50 +377,58 @@ nav a:hover {
 ========================= */
 
 .professionals {
-    padding: 90px 0;
-    background: #30261f;
-    color: white;
+    padding: 72px 0;
+    background: #354238;
+    color: #fff;
 }
 
-.professional-grid {
+.professional-content {
     display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 65px;
+    grid-template-columns: 1.3fr .7fr;
+    gap: 55px;
     align-items: center;
 }
 
-.professional-grid h2 {
-    margin-top: 9px;
-    color: white;
-    font-family: Georgia, serif;
-    font-size: clamp(35px, 4vw, 50px);
-    line-height: 1.1;
+.professional-label {
+    color: #d6a477;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
 }
 
-.professional-grid > div:first-child p {
-    max-width: 610px;
-    margin-top: 18px;
-    color: rgba(255,255,255,.68);
+.professional-content h2 {
+    margin-top: 8px;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 4vw, 49px);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.professional-content p {
+    max-width: 650px;
+    margin-top: 17px;
+    color: rgba(255,255,255,.7);
     font-size: 14px;
 }
 
-.professional-side {
-    padding: 32px;
-    background: #45352b;
-    border: 1px solid rgba(255,255,255,.1);
-    border-left: 4px solid #b96b3d;
+.professional-box {
+    padding: 28px;
+    background: #414f45;
+    border-left: 4px solid #a9663e;
 }
 
-.professional-side h3 {
-    color: white;
+.professional-box strong {
+    color: #fff;
     font-family: Georgia, serif;
-    font-size: 28px;
+    font-size: 23px;
+    font-weight: 400;
 }
 
-.professional-side p {
-    margin-top: 9px;
-    color: rgba(255,255,255,.68);
-    font-size: 13px;
+.professional-box p {
+    margin-top: 8px;
+    font-size: 12px;
 }
 
 
@@ -415,138 +437,171 @@ nav a:hover {
 ========================= */
 
 .contact {
-    padding: 95px 0;
-    background: #dfe5df;
+    padding: 82px 0 42px;
+    background: #e3e8e2;
 }
 
-.contact .section-heading h2 {
-    color: #29332e;
+.contact-heading {
+    max-width: 650px;
+    margin-bottom: 34px;
 }
 
-.contact .section-heading p {
-    color: #5e6862;
+.contact-heading h2 {
+    color: #303a33;
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 4vw, 50px);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.contact-heading p {
+    margin-top: 12px;
+    color: #606960;
+    font-size: 14px;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: .75fr 1.25fr;
-    gap: 18px;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 17px;
 }
 
-.contact-info,
-.contact-form {
-    padding: 40px;
-    background: #f9faf8;
-    border: 1px solid #c9d1ca;
-    box-shadow: 0 10px 30px rgba(35,45,39,.06);
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info {
+    background: #fafbf9;
+    border: 1px solid #ccd4cc;
+    padding: 28px;
 }
 
-.contact-info h2,
-.contact-form h2 {
-    color: #29332e;
+.contact-info h3 {
+    color: #303a33;
     font-family: Georgia, serif;
-    font-size: 31px;
-    line-height: 1.15;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .contact-item {
-    margin-top: 23px;
-    color: #5e6862;
-    font-size: 14px;
+    margin-top: 17px;
+    color: #626b63;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .contact-item small {
     display: block;
-    margin-bottom: 4px;
-    color: #b96b3d;
-    font-size: 10px;
-    font-weight: bold;
+    margin-bottom: 2px;
+    color: #a9663e;
+    font-size: 9px;
+    font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
 }
 
 .contact-item a {
-    color: #29332e;
-    font-weight: bold;
-}
-
-.contact-info .btn {
-    margin-top: 25px;
+    color: #303a33;
+    font-weight: 700;
 }
 
 
-/* GOOGLE MAPS */
+/* =========================
+   GOOGLE MAPS
+========================= */
 
 .maps-button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 14px;
-    min-height: 44px;
+    width: 100%;
+    min-height: 48px;
+    margin-top: 18px;
     padding: 0 18px;
-    background: #b96b3d;
-    color: white !important;
-    border-radius: 4px;
+    background: #a9663e;
+    color: #fff !important;
+    border-radius: 5px;
     font-size: 12px;
-    font-weight: bold;
-    transition: .25s;
+    font-weight: 700;
+    transition: .2s;
 }
 
 .maps-button:hover {
-    background: #9d542f;
+    background: #8e5332;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    background: #fafbf9;
+    border: 1px solid #ccd4cc;
+    padding: 34px;
+}
+
+.contact-form h3 {
+    color: #303a33;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: 400;
 }
 
 form {
-    margin-top: 22px;
+    margin-top: 19px;
 }
 
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 11px;
 }
 
 input,
 select,
 textarea {
     width: 100%;
-    margin-bottom: 12px;
-    padding: 14px 15px;
-    background: white;
-    border: 1px solid #cbd2cd;
-    border-radius: 3px;
-    color: #29332e;
+    margin-bottom: 11px;
+    padding: 13px 14px;
+    border: 1px solid #cbd2cc;
+    border-radius: 4px;
+    background: #fff;
+    color: #303a33;
     font-family: inherit;
-    font-size: 13px;
+    font-size: 12px;
     outline: none;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #b96b3d;
+    border-color: #a9663e;
 }
 
 textarea {
-    min-height: 135px;
+    min-height: 125px;
     resize: vertical;
 }
 
 .submit {
     width: 100%;
-    min-height: 50px;
-    border: none;
-    border-radius: 3px;
-    background: #b96b3d;
-    color: white;
+    min-height: 48px;
+    border: 0;
+    border-radius: 4px;
+    background: #a9663e;
+    color: #fff;
     font-family: inherit;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 700;
     cursor: pointer;
 }
 
 .submit:hover {
-    background: #9d542f;
+    background: #8e5332;
 }
 
 
@@ -555,15 +610,39 @@ textarea {
 ========================= */
 
 footer {
-    padding: 35px 0;
-    background: #30261f;
-    color: rgba(255,255,255,.55);
+    padding: 30px 0;
+    background: #303a33;
+    color: rgba(255,255,255,.58);
     text-align: center;
     font-size: 11px;
 }
 
 footer strong {
-    color: white;
+    color: #fff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+    nav {
+        display: none;
+    }
+
+    .product-grid,
+    .product-grid.three,
+    .product-grid.two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .professional-content,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
@@ -571,73 +650,202 @@ footer strong {
    MOBILE
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 650px) {
 
-    nav {
-        display: none;
+    .container {
+        width: calc(100% - 28px);
     }
 
-    .info-grid,
-    .intro-grid,
-    .professional-grid,
+
+    /* HEADER */
+
+    .header-inner {
+        height: 70px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 10px;
+        letter-spacing: .3px;
+        white-space: nowrap;
+    }
+
+    .header-phone {
+        padding: 8px 10px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 600px;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(35,45,38,.93),
+                rgba(35,45,38,.70)
+            ),
+            url("images/hero.jpg") center/cover no-repeat;
+    }
+
+    .hero-content {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.08;
+        max-width: 390px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        margin-top: 24px;
+    }
+
+    .btn {
+        min-height: 46px;
+        padding: 0 18px;
+    }
+
+
+    /* QUICK INFO */
+
+    .quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-item {
+        padding: 17px 20px;
+    }
+
+    .quick-item strong {
+        font-size: 18px;
+    }
+
+
+    /* PRODUCTS */
+
+    .products {
+        padding: 65px 0;
+    }
+
+    .products-heading h2 {
+        font-size: 36px;
+    }
+
+    .category {
+        margin-top: 42px;
+    }
+
+    .category-title h3 {
+        font-size: 25px;
+    }
+
+    .product-grid,
+    .product-grid.three,
+    .product-grid.two {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 230px;
+    }
+
+    .product-info {
+        padding: 17px 18px 19px;
+    }
+
+    .product-info h4 {
+        font-size: 23px;
+    }
+
+
+    /* PROFESSIONALS */
+
+    .professionals {
+        padding: 65px 0;
+    }
+
+    .professional-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .professional-content h2 {
+        font-size: 35px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding: 65px 0 30px;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    .info-card + .info-card {
-        border-left: none;
-        border-top: 1px solid #d7ccc1;
+    .contact-heading h2 {
+        font-size: 36px;
     }
 
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .container {
-        width: calc(100% - 30px);
+    .contact-info {
+        padding: 23px;
     }
 
-    .logo {
+    .contact-info h3 {
+        font-size: 23px;
+    }
+
+    .contact-item {
+        margin-top: 15px;
+    }
+
+    .maps-button {
+        min-height: 48px;
+        margin-top: 16px;
         font-size: 11px;
     }
 
-    .header-phone {
-        padding: 9px 11px;
-        font-size: 11px;
-    }
-
-    .hero {
-        min-height: 610px;
-    }
-
-    .hero h1 {
-        font-size: 43px;
-    }
-
-    .hero-text {
-        font-size: 15px;
-    }
-
-    .top-info,
-    .intro,
-    .products,
-    .professionals,
-    .contact {
-        padding: 70px 0;
+    .contact-form {
+        padding: 25px;
     }
 
     .form-row {
         grid-template-columns: 1fr;
     }
 
-    .contact-info,
-    .contact-form {
-        padding: 27px;
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    .logo {
+        font-size: 9px;
     }
+
+    .header-phone {
+        padding: 7px 8px;
+        font-size: 9px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
 }
 
 </style>
@@ -647,7 +855,9 @@ footer strong {
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -658,8 +868,15 @@ footer strong {
 </a>
 
 <nav>
-    <a href="#epaggelmaties">Επαγγελματίες</a>
-    <a href="#epikoinonia">Επικοινωνία</a>
+
+<a href="#epaggelmaties">
+    Επαγγελματίες
+</a>
+
+<a href="#epikoinonia">
+    Επικοινωνία
+</a>
+
 </nav>
 
 <a href="tel:6949255398" class="header-phone">
@@ -671,7 +888,9 @@ footer strong {
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -679,19 +898,19 @@ footer strong {
 
 <div class="hero-content">
 
-<div class="small-title">
+<div class="hero-label">
     Καύσιμα & Θέρμανση
 </div>
 
 <h1>
-    ΟΛΑ ΟΣΑ ΧΡΕΙΑΖΕΣΤΕ
-    ΓΙΑ ΤΗΝ ΘΕΡΜΑΝΣΗ ΣΑΣ.
+    ΟΤΙ ΧΡΕΙΑΖΕΣΤΕ
+    ΓΙΑ ΤΗ ΘΕΡΜΑΝΣΗ ΣΑΣ.
 </h1>
 
 <p class="hero-text">
     Πέλλετ, καυσόξυλα, μπρικέτες, κάρβουνα,
-    σόμπες και είδη θέρμανσης για κατοικίες
-    και επαγγελματικούς χώρους.
+    σόμπες, ανταλλακτικά και είδη για το σπίτι.
+    Για οικιακή και επαγγελματική χρήση.
 </p>
 
 <div class="hero-buttons">
@@ -700,10 +919,6 @@ footer strong {
     Δείτε τα προϊόντα
 </a>
 
-<a href="#epikoinonia" class="btn btn-outline">
-    Επικοινωνήστε μαζί μας
-</a>
-
 </div>
 
 </div>
@@ -713,132 +928,95 @@ footer strong {
 </section>
 
 
-<!-- INFO -->
+<!-- =========================
+     QUICK INFO
+========================= -->
 
-<section class="top-info">
+<section class="quick-info">
 
 <div class="container">
 
-<div class="info-grid">
+<div class="quick-grid">
 
-<div class="info-card">
+<div class="quick-item">
 
-<div class="info-label">
-    Παράδοση
-</div>
-
-<h3>
-    Παράδοση στον χώρο σας
-</h3>
-
-<p>
-    Δυνατότητα μεταφοράς των προϊόντων
-    στον χώρο σας, κατόπιν συνεννόησης.
-    Η υπηρεσία μεταφοράς χρεώνεται ξεχωριστά.
-</p>
-
-</div>
-
-
-<div class="info-card">
-
-<div class="info-label">
-    Επαγγελματίες
-</div>
-
-<h3>
-    Μεγαλύτερες ποσότητες
-</h3>
-
-<p>
-    Για μεγαλύτερες ποσότητες και
-    επαγγελματικές προμήθειες,
-    επικοινωνήστε μαζί μας για
-    διαθεσιμότητα και τιμή.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- INTRO -->
-
-<section class="intro">
-
-<div class="container intro-grid">
-
-<div>
-
-<div class="intro-label">
-    Κωστακόπουλος Βασίλειος
-</div>
-
-<h2>
-    Προϊόντα θέρμανσης
-    για κάθε ανάγκη.
-</h2>
-
-<p>
-    Επιλεγμένα καύσιμα και προϊόντα
-    θέρμανσης για κατοικίες,
-    επαγγελματικούς χώρους και επιχειρήσεις.
-</p>
-
-<p>
-    Για μεγαλύτερες ποσότητες,
-    η τιμή διαμορφώνεται κατόπιν επικοινωνίας.
-</p>
-
-</div>
-
-
-<div class="offer-box">
-
-<h3>
-    Επικοινωνήστε μαζί μας
-</h3>
-
-<p>
-    Αναφέρετε το προϊόν και την ποσότητα
-    που χρειάζεστε και επικοινωνήστε μαζί μας
-    για διαθεσιμότητα και τιμή.
-</p>
+<small>
+    Περιοχή
+</small>
 
 <strong>
-    Τιμές κατόπιν επικοινωνίας
+    Λιβαδειά Βοιωτίας
+</strong>
+
+</div>
+
+
+<div class="quick-item">
+
+<small>
+    Χρήση
+</small>
+
+<strong>
+    Οικιακή & επαγγελματική
+</strong>
+
+</div>
+
+
+<div class="quick-item">
+
+<small>
+    Τηλέφωνο
+</small>
+
+<strong>
+    694 925 5398
 </strong>
 
 </div>
 
 </div>
 
+</div>
+
 </section>
 
 
-<!-- PRODUCTS -->
+<!-- =========================
+     PRODUCTS
+========================= -->
 
 <section class="products" id="proionta">
 
 <div class="container">
 
-<div class="section-heading">
 
-<div class="section-label">
-    Προϊόντα
-</div>
+<div class="products-heading">
 
 <h2>
-    Καύσιμα & είδη θέρμανσης
+    Τα προϊόντα μας
 </h2>
 
 <p>
-    Προϊόντα για οικιακή και επαγγελματική χρήση.
+    Καύσιμα, θέρμανση, ανταλλακτικά
+    και είδη για το σπίτι.
 </p>
+
+</div>
+
+
+<!-- CATEGORY 1 -->
+
+<div class="category">
+
+<div class="category-title">
+
+<h3>
+    Καύσιμα Θέρμανσης
+</h3>
+
+<div class="category-line"></div>
 
 </div>
 
@@ -848,24 +1026,31 @@ footer strong {
 
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
-    Καύσιμο θέρμανσης
+<!--
+<img src="images/pellet.jpg" alt="Πέλλετ">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
 </div>
 
-<h3>
+<div class="product-info">
+
+<small>
+    Καύσιμο θέρμανσης
+</small>
+
+<h4>
     Πέλλετ
-</h3>
+</h4>
 
 <p>
-    Πέλλετ για οικιακή και
-    επαγγελματική χρήση.
+    Πέλλετ για οικιακή και επαγγελματική χρήση.
 </p>
-
-<div class="product-price">
-    Τιμή κατόπιν επικοινωνίας
-</div>
 
 </div>
 
@@ -874,24 +1059,31 @@ footer strong {
 
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
+<!--
+<img src="images/kafsoxyla.jpg" alt="Καυσόξυλα">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
+</div>
+
+<div class="product-info">
+
+<small>
     Καύσιμο θέρμανσης
-</div>
+</small>
 
-<h3>
+<h4>
     Καυσόξυλα
-</h3>
+</h4>
 
 <p>
-    Καυσόξυλα για τζάκια,
-    ξυλόσομπες και θέρμανση.
+    Καυσόξυλα για τζάκια, ξυλόσομπες και θέρμανση.
 </p>
-
-<div class="product-price">
-    Διαθεσιμότητα κατόπιν επικοινωνίας
-</div>
 
 </div>
 
@@ -900,24 +1092,31 @@ footer strong {
 
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
-    Καύσιμο
+<!--
+<img src="images/briketes.jpg" alt="Μπρικέτες">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
 </div>
 
-<h3>
+<div class="product-info">
+
+<small>
+    Καύσιμο
+</small>
+
+<h4>
     Μπρικέτες
-</h3>
+</h4>
 
 <p>
-    Πρακτική επιλογή καυσίμου
-    για θέρμανση.
+    Πρακτική επιλογή καυσίμου για θέρμανση.
 </p>
-
-<div class="product-price">
-    Τιμή κατόπιν επικοινωνίας
-</div>
 
 </div>
 
@@ -926,54 +1125,87 @@ footer strong {
 
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
+<!--
+<img src="images/karvouna.jpg" alt="Κάρβουνα">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
+</div>
+
+<div class="product-info">
+
+<small>
     Καύσιμο
-</div>
+</small>
 
-<h3>
+<h4>
     Κάρβουνα
-</h3>
+</h4>
 
 <p>
-    Κάρβουνα για οικιακή
-    και επαγγελματική χρήση.
+    Κάρβουνα για οικιακή και επαγγελματική χρήση.
 </p>
-
-<div class="product-price">
-    Διαθεσιμότητα κατόπιν επικοινωνίας
-</div>
 
 </div>
 
 </article>
 
 
-<article class="product-card">
-
-<div>
-
-<div class="product-type">
-    Θέρμανση
 </div>
 
+</div>
+
+
+<!-- CATEGORY 2 -->
+
+<div class="category">
+
+<div class="category-title">
+
 <h3>
+    Σόμπες & Θέρμανση
+</h3>
+
+<div class="category-line"></div>
+
+</div>
+
+
+<div class="product-grid three">
+
+
+<article class="product-card">
+
+<div class="product-image">
+
+<!--
+<img src="images/sompes-pellet.jpg" alt="Σόμπες Πέλλετ">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
+</div>
+
+<div class="product-info">
+
+<small>
+    Θέρμανση
+</small>
+
+<h4>
     Σόμπες Πέλλετ
-</h3>
+</h4>
 
 <p>
-    Ιταλικές σόμπες πέλλετ
-    για αποδοτική και αξιόπιστη θέρμανση.
+    Ιταλικές σόμπες πέλλετ για αποτελεσματική θέρμανση.
 </p>
-
-<div class="product-price">
-    Eva Calor · Giada / Elsa
-</div>
-
-<div class="product-price">
-    Διαθέσιμα μοντέλα κατόπιν επικοινωνίας
-</div>
 
 </div>
 
@@ -982,24 +1214,31 @@ footer strong {
 
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
-    Θέρμανση
+<!--
+<img src="images/sompes-xyloy.jpg" alt="Σόμπες Ξύλου">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
 </div>
 
-<h3>
+<div class="product-info">
+
+<small>
+    Θέρμανση
+</small>
+
+<h4>
     Σόμπες Ξύλου
-</h3>
+</h4>
 
 <p>
-    Σόμπες ξύλου για αποτελεσματική
-    θέρμανση του χώρου.
+    Σόμπες ξύλου για ζεστό και άνετο χώρο.
 </p>
-
-<div class="product-price">
-    Διαθεσιμότητα κατόπιν επικοινωνίας
-</div>
 
 </div>
 
@@ -1008,76 +1247,142 @@ footer strong {
 
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
+<!--
+<img src="images/sompes-petrelaiou.jpg" alt="Σόμπες Πετρελαίου">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
+</div>
+
+<div class="product-info">
+
+<small>
     Θέρμανση
-</div>
+</small>
 
-<h3>
+<h4>
     Σόμπες Πετρελαίου
-</h3>
+</h4>
 
 <p>
-    Λύσεις θέρμανσης με πετρέλαιο
-    για διαφορετικές ανάγκες χώρου.
+    Λύσεις θέρμανσης για διαφορετικές ανάγκες χώρου.
 </p>
-
-<div class="product-price">
-    Διαθεσιμότητα κατόπιν επικοινωνίας
-</div>
 
 </div>
 
 </article>
 
 
-<article class="product-card">
-
-<div>
-
-<div class="product-type">
-    Ανταλλακτικά
 </div>
+
+</div>
+
+
+<!-- CATEGORY 3 -->
+
+<div class="category">
+
+<div class="category-title">
 
 <h3>
     Ανταλλακτικά
 </h3>
 
-<p>
-    Ανταλλακτικά και εξαρτήματα
-    για σόμπες πέλλετ.
-</p>
+<div class="category-line"></div>
 
-<div class="product-price">
-    Ρωτήστε μας για το ανταλλακτικό που χρειάζεστε
 </div>
+
+
+<div class="product-grid two">
+
+<article class="product-card">
+
+<div class="product-image">
+
+<!--
+<img src="images/antallaktika.jpg" alt="Ανταλλακτικά">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
+</div>
+
+<div class="product-info">
+
+<small>
+    Ανταλλακτικά
+</small>
+
+<h4>
+    Ανταλλακτικά
+</h4>
+
+<p>
+    Ανταλλακτικά και εξαρτήματα για σόμπες πέλλετ.
+</p>
 
 </div>
 
 </article>
 
 
+</div>
+
+</div>
+
+
+<!-- CATEGORY 4 -->
+
+<div class="category">
+
+<div class="category-title">
+
+<h3>
+    Τροφές Κατοικίδιων
+</h3>
+
+<div class="category-line"></div>
+
+</div>
+
+
+<div class="product-grid two">
+
+
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
+<!--
+<img src="images/trofes-skylon.jpg" alt="Τροφές Σκύλων">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
+</div>
+
+<div class="product-info">
+
+<small>
     Τροφές κατοικίδιων
-</div>
+</small>
 
-<h3>
+<h4>
     Τροφές Σκύλων
-</h3>
+</h4>
 
 <p>
-    Τροφές για σκύλους
-    για καθημερινή διατροφή.
+    Τροφές για την καθημερινή διατροφή του σκύλου.
 </p>
-
-<div class="product-price">
-    Nutridog · Barky
-</div>
 
 </div>
 
@@ -1086,24 +1391,31 @@ footer strong {
 
 <article class="product-card">
 
-<div>
+<div class="product-image">
 
-<div class="product-type">
-    Τροφές κατοικίδιων
+<!--
+<img src="images/trofes-gaton.jpg" alt="Τροφές Γατών">
+-->
+
+<span>
+    Φωτογραφία προϊόντος
+</span>
+
 </div>
 
-<h3>
+<div class="product-info">
+
+<small>
+    Τροφές κατοικίδιων
+</small>
+
+<h4>
     Τροφές Γατών
-</h3>
+</h4>
 
 <p>
-    Τροφές για γάτες
-    για τις καθημερινές ανάγκες τους.
+    Τροφές για τις καθημερινές ανάγκες της γάτας.
 </p>
-
-<div class="product-price">
-    Διαθέσιμες κατόπιν επικοινωνίας
-</div>
 
 </div>
 
@@ -1111,50 +1423,53 @@ footer strong {
 
 
 </div>
+
+</div>
+
 
 </div>
 
 </section>
 
 
-<!-- PROFESSIONALS -->
+<!-- =========================
+     PROFESSIONALS
+========================= -->
 
 <section class="professionals" id="epaggelmaties">
 
 <div class="container">
 
-<div class="professional-grid">
+<div class="professional-content">
 
 <div>
 
 <div class="professional-label">
-    Επαγγελματίες
+    Για επαγγελματίες
 </div>
 
 <h2>
-    Μεγαλύτερες ποσότητες,
-    καλύτερη συνεννόηση.
+    Χρειάζεστε μεγαλύτερη ποσότητα;
 </h2>
 
 <p>
-    Για επαγγελματίες και επιχειρήσεις
-    που χρειάζονται μεγαλύτερες ποσότητες
-    προϊόντων θέρμανσης, επικοινωνήστε
-    μαζί μας για να συζητήσουμε τις ανάγκες σας.
+    Για επαγγελματίες και επιχειρήσεις που χρειάζονται
+    μεγαλύτερες ποσότητες προϊόντων θέρμανσης,
+    επικοινωνήστε μαζί μας για διαθεσιμότητα
+    και περισσότερες πληροφορίες.
 </p>
 
 </div>
 
 
-<div class="professional-side">
+<div class="professional-box">
 
-<h3>
+<strong>
     Επαγγελματικές προμήθειες
-</h3>
+</strong>
 
 <p>
-    Για ποσότητες και τιμές επαγγελματικής
-    προμήθειας, επικοινωνήστε μαζί μας.
+    Κατόπιν συνεννόησης για τις ανάγκες της επιχείρησής σας.
 </p>
 
 </div>
@@ -1166,25 +1481,23 @@ footer strong {
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section class="contact" id="epikoinonia">
 
 <div class="container">
 
-<div class="section-heading">
-
-<div class="section-label">
-    Επικοινωνία
-</div>
+<div class="contact-heading">
 
 <h2>
     Επικοινωνήστε μαζί μας
 </h2>
 
 <p>
-    Καλέστε μας για πληροφορίες σχετικά
-    με προϊόντα, ποσότητες, διαθεσιμότητα και τιμές.
+    Για προϊόντα, διαθεσιμότητα και πληροφορίες,
+    μπορείτε να μας καλέσετε ή να επισκεφθείτε το κατάστημά μας.
 </p>
 
 </div>
@@ -1195,9 +1508,9 @@ footer strong {
 
 <div class="contact-info">
 
-<h2>
+<h3>
     Κωστακόπουλος Βασίλειος
-</h2>
+</h3>
 
 
 <div class="contact-item">
@@ -1219,11 +1532,8 @@ footer strong {
     Διεύθυνση
 </small>
 
-Κυκλάδων 3
-<br>
+Κυκλάδων 3<br>
 321 31 Λιβαδειά Βοιωτίας
-
-<br>
 
 <a
     href="https://maps.app.goo.gl/ryx4kab3hyq1PE2V9"
@@ -1235,32 +1545,14 @@ footer strong {
 
 </div>
 
-
-<div class="contact-item">
-
-<small>
-    Επικοινωνία
-</small>
-
-Κατόπιν συνεννόησης για
-διαθεσιμότητα, ποσότητες και τιμές.
-
-</div>
-
-
-<a href="tel:6949255398" class="btn btn-primary">
-    Καλέστε μας
-</a>
-
 </div>
 
 
 <div class="contact-form">
 
-<h2>
+<h3>
     Στείλτε το αίτημά σας
-</h2>
-
+</h3>
 
 <form onsubmit="sendForm(event)">
 
@@ -1324,7 +1616,7 @@ footer strong {
 <input
     type="text"
     id="quantity"
-    placeholder="Ποσότητα"
+    placeholder="Ποσότητα (προαιρετικά)"
 >
 
 
@@ -1349,7 +1641,9 @@ footer strong {
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1387,8 +1681,9 @@ function sendForm(event) {
     event.preventDefault();
 
     alert(
-        "Η φόρμα θα συνδεθεί με το email της επιχείρησης μόλις έχουμε το email."
+        "Η φόρμα θα συνδεθεί με το email της επιχείρησης σε επόμενο στάδιο."
     );
+
 }
 
 </script>
